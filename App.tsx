@@ -1,6 +1,6 @@
 import theme from 'themes'
 import { ThemeProvider } from 'styled-components'
-import { Clases } from 'screen/Clases'
+
 import {
   useFonts,
   Roboto_400Regular,
@@ -9,6 +9,7 @@ import {
 import React from 'react'
 import { Loading } from 'components/Loading'
 import { StatusBar } from 'react-native'
+import { Groups } from 'screen/Groups'
 export default function App() {
   const [fontsLoaded] = useFonts({
     Roboto_400Regular,
@@ -21,7 +22,7 @@ export default function App() {
         translucent
         backgroundColor={'transparent'}
       />
-      {fontsLoaded ? <Clases /> : <Loading />}
+      {fontsLoaded ? <Groups /> : <Loading />}
     </ThemeProvider>
   )
 }
