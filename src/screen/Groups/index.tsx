@@ -34,9 +34,8 @@ export function Groups() {
   }
 
   function handleOpenGroup(group: string) {
-    navigation.navigate('groups', { group })
+    navigation.navigate('players', { group })
   }
-
   useFocusEffect(
     useCallback(() => {
       fetchGroups()
