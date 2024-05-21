@@ -34,7 +34,7 @@ export function Groups() {
   }
 
   function handleOpenGroup(group: string) {
-    navigation.navigate('players', { group })
+    navigation.navigate('groups', { group })
   }
 
   useFocusEffect(

@@ -22,7 +22,7 @@ export function NewGroup() {
       }
 
       await groupCreate(group)
-      navigation.navigate('players', { group })
+      navigation.navigate('groups', { group })
     } catch (error) {
       if (error instanceof AppError) {
         Alert.alert('Novo Grupo', error.message)
